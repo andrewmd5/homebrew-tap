@@ -1,16 +1,22 @@
 class Dawn < Formula
-  desc "Distraction-free terminal writing environment with live markdown rendering"
+  desc "Distraction-free writing environment with live markdown rendering"
   homepage "https://github.com/andrewmd5/dawn"
-  url "https://github.com/andrewmd5/dawn/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "23f2fc9c467fc8a02872853a7f843929bcb2c6bc16e98c2e0a05f11300cf0988"
+  version "VERSION"
   license "MIT"
 
-  depends_on "cmake" => :build
+  on_macos do
+    on_arm do
+      url "https://github.com/andrewmd5/dawn/releases/download/vVERSION/dawn-macos-arm64.tar.gz"
+      sha256 "SHA256_ARM64"
+    end
+    on_intel do
+      url "https://github.com/andrewmd5/dawn/releases/download/vVERSION/dawn-macos-x64.tar.gz"
+      sha256 "SHA256_X64"
+    end
+  end
 
   def install
-    system "cmake", "-B", "build", "-DCMAKE_BUILD_TYPE=Release", *std_cmake_args
-    system "cmake", "--build", "build"
-    bin.install "build/dawn"
+    bin.install "dawn"
   end
 
   test do
