@@ -5,12 +5,11 @@ class Dawn < Formula
   sha256 "SHA256"
   license "MIT"
 
-  depends_on "automake" => :build
-  depends_on "autoconf" => :build
-  depends_on "libtool" => :build
+  depends_on "cmake" => :build
 
   def install
-    system "make"
+    system "cmake", "-B", "build", "-DCMAKE_BUILD_TYPE=Release", *std_cmake_args
+    system "cmake", "--build", "build"
     bin.install "build/dawn"
   end
 
