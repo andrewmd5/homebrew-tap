@@ -1,8 +1,8 @@
 class Dawn < Formula
-  desc "Distraction-free writing environment with live markdown rendering"
+  desc "Distraction-free terminal writing environment with live markdown rendering"
   homepage "https://github.com/andrewmd5/dawn"
-  url "https://github.com/andrewmd5/dawn/archive/refs/tags/vVERSION.tar.gz"
-  sha256 "SHA256"
+  url "https://github.com/andrewmd5/dawn/archive/refs/tags/v0.0.1.tar.gz"
+  sha256 "23f2fc9c467fc8a02872853a7f843929bcb2c6bc16e98c2e0a05f11300cf0988"
   license "MIT"
 
   depends_on "cmake" => :build
