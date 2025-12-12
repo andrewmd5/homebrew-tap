@@ -7,7 +7,7 @@ class Dawn < Formula
   on_macos do
     on_arm do
       url "https://github.com/andrewmd5/dawn/releases/download/v0.0.3/dawn-macos-arm64.tar.gz"
-      sha256 "3590bcb90a75c32ba8b10d692d26838caedbc267a57db23931694abc9598c873"
+      sha256 "32a2e43dd07d75eef079ff7d7601c8cfeda0de870564573fe218e50d8d2a8175"
     end
     on_intel do
       url "https://github.com/andrewmd5/dawn/releases/download/v0.0.3/dawn-macos-x64.tar.gz"
