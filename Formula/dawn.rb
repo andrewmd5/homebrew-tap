@@ -1,17 +1,17 @@
 class Dawn < Formula
   desc "Distraction-free terminal writing environment with live markdown rendering"
   homepage "https://github.com/andrewmd5/dawn"
-  version "0.0.5"
+  version "0.0.6"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/andrewmd5/dawn/releases/download/v0.0.5/dawn-macos-arm64.tar.gz"
-      sha256 "687329cd701d91b8ee161bc558604e27ad5926663686bcf8b3cac00860f15210"
+      url "https://github.com/andrewmd5/dawn/releases/download/v0.0.6/dawn-macos-arm64.tar.gz"
+      sha256 "822b9ec78775f0ebb5b6ed213ada4d6a9960fddbd724071e9ff1423b5bfd7873"
     end
     on_intel do
-      url "https://github.com/andrewmd5/dawn/releases/download/v0.0.5/dawn-macos-x64.tar.gz"
-      sha256 "477899fcd870cb1aab5ab64b4da66bd5e3bd5dd63f93015efb37f6a504de8741"
+      url "https://github.com/andrewmd5/dawn/releases/download/v0.0.6/dawn-macos-x64.tar.gz"
+      sha256 "8543988bfb3f45b25171e843d418e7bcb54e5b5ce67c3e2433fd63a98c15478f"
     end
   end
 
