@@ -1,28 +1,28 @@
 class Dawn < Formula
   desc "Distraction-free terminal writing environment with live markdown rendering"
   homepage "https://github.com/andrewmd5/dawn"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/andrewmd5/dawn/releases/download/v0.1.1/dawn-macos-arm64.tar.gz"
-      sha256 "a9fcc2e0346e864299186e34827645a992621807361827d6c9f654a4216bbd72"
+      url "https://github.com/andrewmd5/dawn/releases/download/v0.1.2/dawn-macos-arm64.tar.gz"
+      sha256 "0a8fa713d3c4e3e476ac7a7b3922b49e3ad6649cfeccb821dcc7b55035d30756"
     end
     on_intel do
-      url "https://github.com/andrewmd5/dawn/releases/download/v0.1.1/dawn-macos-x64.tar.gz"
-      sha256 "897141c64ebfb0e52b56cc4b2838a7ee7a6f9e7336a9733395b6afce0b7c02e1"
+      url "https://github.com/andrewmd5/dawn/releases/download/v0.1.2/dawn-macos-x64.tar.gz"
+      sha256 "26e0e11c737d733df2317e4b96bcd7e2469e3b5b819bf1d88a6dc6d100488745"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/andrewmd5/dawn/releases/download/v0.1.1/dawn-linux-arm64.tar.gz"
-      sha256 "5a15be5c9c869cd08e6c185595344dbc9f64e003539005e4f450327628018d75"
+      url "https://github.com/andrewmd5/dawn/releases/download/v0.1.2/dawn-linux-arm64.tar.gz"
+      sha256 "cd157d0f126706e67e4752c1813d0cc74739d3c900ceb09031e3e2f32953fcb0"
     end
     on_intel do
-      url "https://github.com/andrewmd5/dawn/releases/download/v0.1.1/dawn-linux-x64.tar.gz"
-      sha256 "855857699bda6985ff6a7450eec79eb144b7a2835d0162b2758a4fb1d41e3067"
+      url "https://github.com/andrewmd5/dawn/releases/download/v0.1.2/dawn-linux-x64.tar.gz"
+      sha256 "4d1e978ed1efeab7ec6bb35fe3515f6a6193526a059c6afc528c798e1698b841"
     end
   end
 
